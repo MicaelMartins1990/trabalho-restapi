@@ -1,0 +1,9 @@
+# Credenciais
+.env
+**/.env
+
+# Dependências
+node_modules/
+
+# macOS
+.DS_Store
