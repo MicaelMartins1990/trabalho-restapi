@@ -1,0 +1,95 @@
+/* ===== Página ===== */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-top: 0;
+}
+
+/* ===== Caixas brancas (formulário e lista) ===== */
+.caixa {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Formulário ===== */
+label {
+    display: block;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+input,
+select {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box; /* para o width: 100% não passar da caixa */
+}
+
+/* ===== Botões ===== */
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#btnCancelar {
+    background-color: #95a5a6;
+}
+
+/* ===== Lista de alunos ===== */
+#divalunos p {
+    display: flex; /* texto e botões na mesma linha */
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-left: 4px solid #3498db;
+    border-radius: 4px;
+}
+
+#divalunos button {
+    padding: 4px 10px;
+}
+
+/* Empurra os botões para a direita */
+#divalunos button:first-of-type {
+    margin-left: auto;
+}
+
+/* O botão "Apagar" é o último dentro de cada aluno: fica vermelho */
+#divalunos button:last-child {
+    background-color: #e74c3c;
+}
+
+#divalunos button:last-child:hover {
+    background-color: #c0392b;
+}

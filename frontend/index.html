@@ -4,30 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>REST API - Gestão de Alunos</title>
-    
-    <script src="script.js" defer></script> 
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <h1>Gestão de Alunos</h1>
 
-    <h2>Adicionar / Editar Aluno</h2>
-    <form id="formAluno">
-     
-        <input type="hidden" id="alunoId">
-        
-        <label>Nome: <input type="text" id="nome" required></label><br><br>
-        <label>Apelido: <input type="text" id="apelido" required></label><br><br>
-        <label>Curso: <select id="idCurso" required></select></label><br><br>
-        <label>Ano curricular: <input type="number" id="anoCurricular" min="1" max="5" required></label><br><br>
-        
-        <button type="submit">Guardar</button>
-        <button type="button" id="btnCancelar" style="display:none;">Cancelar Edição</button>
-    </form>
+    <div class="caixa">
+        <h2>Adicionar / Editar Aluno</h2>
+        <form id="formAluno">
 
-    <hr>
+            <input type="hidden" id="alunoId">
 
-    <h2>Lista de Alunos</h2>
-    <div id="divalunos"></div>
+            <label>Nome: <input type="text" id="nome" required></label>
+            <label>Apelido: <input type="text" id="apelido" required></label>
+            <label>Curso: <select id="idCurso" required></select></label>
+            <label>Ano curricular: <input type="number" id="anoCurricular" min="1" max="5" required></label>
+
+            <button type="submit">Guardar</button>
+            <button type="button" id="btnCancelar" style="display:none;">Cancelar Edição</button>
+        </form>
+    </div>
+
+    <div class="caixa">
+        <h2>Lista de Alunos</h2>
+        <div id="divalunos"></div>
+    </div>
 
 </body>
 </html>
